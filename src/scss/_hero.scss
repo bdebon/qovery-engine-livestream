@@ -126,3 +126,28 @@
         margin-right: 24px;
     }
 }
+
+
+@media screen and (max-width: 750px) {
+    .q-hero__images {
+        display: none;
+    }
+
+    .q-hero__logo {
+        margin-bottom: 32px;
+    }
+
+    .q-hero__text {
+        margin-right: 0;
+
+        h1 {
+            display: block;
+
+            span {
+                display: block;
+                margin-top: 24px;
+                margin-left: 0;
+            }
+        }
+    }
+}
