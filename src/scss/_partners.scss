@@ -1,0 +1,20 @@
+.q-partners {
+  margin-bottom: 120px;
+
+  h2 {
+    font-family: "hk_grotesk";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  ul {
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

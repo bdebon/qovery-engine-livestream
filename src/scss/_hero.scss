@@ -1,0 +1,128 @@
+.q-hero {
+    background: #151B2B;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.q-hero__logo {
+    width: 158px;
+}
+
+.q-hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.q-hero__text {
+    max-width: 470px;
+    margin-right: 70px;
+    opacity: 0;
+    animation: HeroSlideIn 1s forwards .2s ease;
+
+    h1 {
+        font-family: hk_grotesk;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 110%;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: baseline;
+
+        span {
+            margin-left: 20px;
+        }
+    }
+
+    .q-hero__headline {
+        font-family: hk_grotesk;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 140%;
+        margin-bottom: 24px;
+    }
+
+    .q-hero__summary {
+        font-size: 16px;
+        line-height: 150%;
+        color: #8686B3;
+        margin-bottom: 48px;
+    }
+}
+
+.q-hero__images {
+    max-width: 550px;
+    position: relative;
+    animation: HeroWrapperSlideIn 1.3s forwards .8s;
+
+    .q-hero__illu {
+        position: relative;
+        opacity: 0;
+        animation: HeroSlideIn .9s forwards  .8s;
+
+        &--1 {
+            z-index: 10;
+        }
+
+        &--2 {
+            z-index: 9;
+            margin-top: -15%;
+            animation-delay: 1.1s;
+        }
+
+        &--3 {
+            z-index: 8;
+            margin-top: -12%;
+            animation-delay: 1.4s;
+        }
+
+        &.q-hero__illu--dashes {
+            position: absolute;
+            animation: FadeIn 1s forwards 1.6s;
+            opacity: 0;
+            top: -6%;
+        }
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HeroWrapperSlideIn {
+    0% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes HeroSlideIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.q-hero__ctas {
+    display: flex;
+
+    .q-btn:first-child {
+        margin-right: 24px;
+    }
+}

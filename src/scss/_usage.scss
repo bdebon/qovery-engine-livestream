@@ -1,0 +1,66 @@
+.q-usage {
+    max-width: 964px;
+    margin: auto;
+    padding: 0 32px;
+    margin-bottom: 100px;
+
+    h2 {
+        font-family: "hk_grotesk";
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 110%;
+        color: #454658;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 150%;
+        color: #454658;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+}
+
+.q-usage__head {
+    background: url('/assets/img/bg.svg') no-repeat bottom center;
+    background-size: 100%;
+    padding-bottom: 100px;
+}
+
+.q-usage__code-wrapper {
+    padding: 24px;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    margin-bottom: 48px;
+
+    .q-tag {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: white;
+        background: #5D64D2;
+        border-radius: 3px;
+        padding: 4px 8px;
+        margin-bottom: 24px;
+        display: inline-block;
+    }
+
+    pre {
+        overflow: auto;
+        margin: 0;
+    }
+}
+
+.q-usage__ctas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .q-btn:first-child {
+        margin-right: 24px;
+    }
+}
