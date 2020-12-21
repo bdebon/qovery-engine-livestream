@@ -20,9 +20,11 @@
     margin-right: 70px;
     opacity: 0;
     animation: HeroSlideIn 1s forwards .2s ease;
+    font-size: 0;
+    will-change: transform, opacity, box-size;
 
     h1 {
-        font-family: hk_grotesk;
+        font-family: hk_grotesk, Helvetica;
         font-weight: 800;
         font-size: 46px;
         line-height: 110%;
@@ -36,7 +38,7 @@
     }
 
     .q-hero__headline {
-        font-family: hk_grotesk;
+        font-family: hk_grotesk, Helvetica;
         font-weight: 600;
         font-size: 25px;
         line-height: 140%;
@@ -54,12 +56,15 @@
 .q-hero__images {
     max-width: 550px;
     position: relative;
-    animation: HeroWrapperSlideIn 1.3s forwards .8s;
+    animation: HeroWrapperSlideIn 1.3s forwards .5s;
+    will-change: transform, opacity, box-size;
+
 
     .q-hero__illu {
         position: relative;
         opacity: 0;
-        animation: HeroSlideIn .9s forwards  .8s;
+        animation: HeroSlideIn .9s forwards  .5s;
+        will-change: transform, opacity, box-size;
 
         &--1 {
             z-index: 10;
@@ -68,18 +73,18 @@
         &--2 {
             z-index: 9;
             margin-top: -15%;
-            animation-delay: 1.1s;
+            animation-delay: .7s;
         }
 
         &--3 {
             z-index: 8;
             margin-top: -12%;
-            animation-delay: 1.4s;
+            animation-delay: .9s;
         }
 
         &.q-hero__illu--dashes {
             position: absolute;
-            animation: FadeIn 1s forwards 1.6s;
+            animation: FadeIn 1s forwards 1.1s;
             opacity: 0;
             top: -6%;
         }

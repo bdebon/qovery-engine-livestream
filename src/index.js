@@ -1,5 +1,6 @@
 // here you put all the js you want.
 import Keypoints from "./js/keypoints";
+import Partners from "./js/partners";
 
 var options = {
     rootMargin: '0px',
@@ -18,3 +19,4 @@ function callback(entries) {
 let observer = new IntersectionObserver(callback, options);
 
 const keypoints = new Keypoints(observer);
+const partners = new Partners(observer);

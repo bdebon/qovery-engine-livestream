@@ -21,28 +21,22 @@
             opacity: 0;
 
             &.visible {
-                animation: KeyFadeIn 500ms ease-in forwards;
+                animation: KeyFadeIn 600ms ease-in forwards;
             }
 
             &:nth-child(even) {
                 margin-left: auto;
             }
 
-            &:nth-child(1) {
-                animation-delay: 0ms;
+            &:nth-child(odd) {
+                animation-delay: 150ms;
             }
 
-            &:nth-child(2) {
-                animation-delay: .250s;
+            &:nth-child(even) {
+                animation-delay: 350ms;
             }
 
-            &:nth-child(3) {
-                animation-delay: .5s;
-            }
 
-            &:nth-child(4) {
-                animation-delay: .75s;
-            }
 
             img {
                 height: 159px;
@@ -51,7 +45,7 @@
             }
 
             h3 {
-                font-family: hk_grotesk;
+                font-family: hk_grotesk, Helvetica;
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 110%;
@@ -79,6 +73,12 @@
         line-height: 130%;
         text-transform: uppercase;
         color: #5D64D2;
+        display: table-cell;
+        //transition: color 200ms ease;
+
+        &:hover {
+            color: darken(#5D64D2, 15);
+        }
     }
 }
 
